@@ -1,1 +1,43 @@
+public int dodaj(int a, int b) {
+    return a + b;
+}
 
+public int odejmij(int a, int b) {
+    return a - b;
+}
+
+public int pomnoz(int a, int b) {
+    return a * b;
+}
+
+public int podziel(int a, int b) {
+    if (b == 0) {
+        throw new IllegalArgumentException("Dzielenie przez zero jest niedozwolone.");
+    }
+    return a / b;
+}
+
+@Test
+public void testDodawania() {
+    assertEquals(5, dodaj(2, 3));
+}
+
+@Test
+public void testOdejmowania() {
+    assertEquals(2, odejmij(5, 3));
+}
+
+@Test
+public void testMnozenia() {
+    assertEquals(15, pomnoz(3, 5));
+}
+
+@Test
+public void testDzielenia() {
+    assertEquals(2, podziel(6, 3));
+}
+
+@Test
+public void testDzieleniaPrzezZero() {
+    assertThrows(IllegalArgumentException.class, () -> podziel(6, 0));
+}

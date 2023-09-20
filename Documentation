@@ -1,1 +1,33 @@
+Technical Documentation for "MojaKlasa" Java Class
+Overview
+The "MojaKlasa" class is a Java class that provides basic mathematical operations such as addition, subtraction, multiplication, and division. This documentation explains the purpose of the class, its methods, and includes JUnit 5 unit tests for each method.
 
+Class Description
+MojaKlasa
+The "MojaKlasa" class contains the following methods:
+
+1. public int dodaj(int a, int b)
+This method performs addition and returns the result of adding two integers, a and b.
+
+2. public int odejmij(int a, int b)
+This method performs subtraction and returns the result of subtracting integer b from integer a.
+
+3. public int pomnoz(int a, int b)
+This method performs multiplication and returns the result of multiplying two integers, a and b.
+
+4. public int podziel(int a, int b)
+This method performs division and returns the result of dividing integer a by integer b. It also handles the case of division by zero and throws an IllegalArgumentException in such cases.
+
+Unit Tests
+The "MojaKlasa" class includes unit tests for each of its methods using JUnit 5. These tests ensure the correctness of the mathematical operations performed by the methods and handle edge cases.
+
+Test Methods
+testDodawania(): This test method checks the dodaj method to ensure it correctly adds two integers.
+
+testOdejmowania(): This test method checks the odejmij method to ensure it correctly subtracts one integer from another.
+
+testMnozenia(): This test method checks the pomnoz method to ensure it correctly multiplies two integers.
+
+testDzielenia(): This test method checks the podziel method to ensure it correctly divides one integer by another.
+
+testDzieleniaPrzezZero(): This test method checks that the podziel method correctly throws an IllegalArgumentException when attempting to divide by zero.
